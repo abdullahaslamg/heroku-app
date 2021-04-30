@@ -1,0 +1,68 @@
+<%- include('partials/header') -%>
+
+<div class="container h-100">
+    <div class="d-flex justify-content-center h-100">
+        <div class="user_card">
+            <div class="d-flex justify-content-center">
+                <div class="brand_logo_container">
+                    <img src="img/pinterest-circle-logo-png-transparent.png" class="brand_logo" alt="Logo">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center form_container">
+                <form name="contact-form" action="/signup" method="POST">
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" name="username" class="form-control input_user" value="" placeholder="username">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="email" name="useremail" class="form-control input_user" value="" placeholder="email">
+                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" name="userpassword" class="form-control input_pass" value="" placeholder="password">
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customControlInline">
+                            <label class="custom-control-label" for="customControlInline">Remember me</label>
+                        </div>
+                    </div>
+                        <div class="d-flex justify-content-center mt-3 login_container">
+                 <button type="submit" name="button" class="btn login_btn">Register</button>
+               </div>
+                </form>
+            </div>
+    
+            <div class="mt-4">
+                <div class="d-flex justify-content-center links">
+                   if you already have a account... <a href="/" class="ml-2">login</a>
+                </div>
+                <div class="d-flex justify-content-center links">
+                    <!-- <a href="#">Forgot your password?</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <script>
+    function submitForm() {
+   // Get the first form with the name
+   // Usually the form name is not repeated
+   // but duplicate names are possible in HTML
+   // Therefore to work around the issue, enforce the correct index
+   var frm = document.getElementsByName('contact-form')[0];
+   frm.submit(); // Submit the form
+   frm.reset();  // Reset all form data
+   return false; // Prevent page refresh
+}
+</script> -->
+
+<%- include('partials/footer') -%>
